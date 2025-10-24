@@ -261,7 +261,7 @@ function updateAutoMode() {
 
 function updateInteractiveMode() {
     phase = (phase + 0.005) % 4;
-    soundLevel = hasMicAccess ? mic.getLevel() * 3 : 0;
+    soundLevel = hasMicAccess ? mic.getLevel() * 8 : 0;
     
     if (phase < 1) {
         blackHole.size = blackHole.maxSize * ease(phase);
